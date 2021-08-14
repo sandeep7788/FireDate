@@ -163,6 +163,8 @@ public class ProfileFragment extends Fragment {
 
 
     }
+
+
     public void saveSubscriptionDetails(String premium_user) {
         SharedPreferences.Editor editor = getContext().getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE).edit();
         editor.putString("premium_user", premium_user);

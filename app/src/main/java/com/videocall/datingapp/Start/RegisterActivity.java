@@ -200,6 +200,7 @@ public class RegisterActivity extends AppCompatActivity implements DatePickerDia
                                             userProfile.put("user_longitude", stringLongitude);
                                             userProfile.put("user_online", Timestamp.now());
                                             userProfile.put("user_joined", Timestamp.now());
+
                                             userProfile.put("premium_user","no");
 
                                             firebaseFirestore.collection("users")
